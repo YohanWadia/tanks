@@ -41,12 +41,12 @@ io.on("connection", function (socket) {
   });
   
 
-  //Int Array data 1x1
+  //data 1x1 is a String
   socket.on("myMoves", function (data) {
-    console.log(data[0] + "|" + data[1] +"|"+data[2]);
-    io.to(myOwnRoom).emit("myMoves",data);
-    //socket.broadcast.to(myOwnRoom).emit("myMoves", data); 
-    //socket.to(myOwnRoom).emit("myMoves", data); //data[3]will always be roomNo
+    console.log(data);
+    //io.to(myOwnRoom).emit("myMoves",data);//to everyone
+    socket.broadcast.to(myOwnRoom).emit("myMoves", data); //except sender
+    
     console.log("sent to: " + myOwnRoom);
     // if (data[0] === 999) {//only for regular victory reset will happen from here. BUT not for sudden disconnection... cz in that case 999 wont be received here
     //   if(roomArr[data[3]]!=undefined){  
@@ -171,17 +171,16 @@ app.get("/auth", (request, response) => {
       }
     } else if (para3 === 1) {
       if (cnt <= 2) {
-        response.send(JSON.stringify({ message: "Access Granted", ply: cnt }));
+        response.send(JSON.stringify({ message: "Access Granted"}));
       } else {
-        response.send(JSON.stringify({ message: "Access Denied", ply: -1 }));
-      } //-1 means nothing
+        response.send(JSON.stringify({ message: "Access Denied"}));
+      } 
     }
     
   }} 
   else { //authFAILED
     response.send(JSON.stringify({ message: "Access Denied" }));
-  }
-    
+  }    
 });
 
 //https://equal-tulip-cream.glitch.me/create
