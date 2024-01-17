@@ -1,0 +1,25 @@
+ //=========================================for Java Chat
+// socket.on("messagechat", function (data) {
+//     console.log("Received: " + data); 
+//   io.to(myOwnRoom).emit("fromRoom",data);
+// });
+  
+//   socket.on("RoomJoining", function (data) {
+//     console.log("JoiningRequest from " + data);
+//     myOwnRoom =  getMeRoomId(data); //used incase of sudden disconnection
+    
+//     socket.join(myOwnRoom);
+//     socket.emit("RoomJoining", "Joined room #" + myOwnRoom);
+    
+//     console.log("postROOMJoined: " + myOwnRoom);
+//   });
+
+
+//heartBeat
+
+ //forHeartBeat calculations
+ 
+  socket.on('hb', function (data) {
+    console.log("heartBeat.........");
+     socket.emit('hb','');
+  });
