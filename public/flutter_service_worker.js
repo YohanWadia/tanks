@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "c51e543a86aeb5d97cefc74fdd1eb299",
-"assets/AssetManifest.json": "60278547a73789e355071dec7f33343a",
+const RESOURCES = {"assets/AssetManifest.bin": "3d82afec0e6901bc9c5d92ccf5e971ef",
+"assets/AssetManifest.json": "eb8efa931ff98c5d9b0674080bfb7645",
 "assets/assets/audio/end.mp3": "e215c6e66f68697e3a057a48b3a957cc",
 "assets/assets/audio/explode.mp3": "096ff8f7c40fe75966a8c1a8987c765c",
 "assets/assets/audio/gotlife.mp3": "d58d304e1e11ccac4f6d0292a3cd86da",
@@ -19,6 +19,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "c51e543a86aeb5d97cefc74fdd1eb299
 "assets/assets/images/explosion.png": "5fe98869ca49528d131e06367726ab1c",
 "assets/assets/images/fireball.png": "3a523a8ba9e76d402b4835ad179c1f15",
 "assets/assets/images/flamefx.png": "cafcdf53e067a9fc7b3ea7815b567aab",
+"assets/assets/images/heart.png": "833b0888ae60820db58ab38024155c5a",
 "assets/assets/images/lose.png": "1b8aef8264d90bce1d72515f039debf6",
 "assets/assets/images/planks2.png": "84e5e5b474489f3978ae033ec80c713d",
 "assets/assets/images/planks3.png": "14994d4bb0b1679947750a80ddcb161f",
@@ -48,9 +49,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "c51e543a86aeb5d97cefc74fdd1eb299
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "f36400067e27c308edc5a7d9c66d2d87",
-"/": "f36400067e27c308edc5a7d9c66d2d87",
-"main.dart.js": "1e03ca9dc9b7d4969eac61175837e840",
+"index.html": "225f597907f66da696a22f94bb62e4b7",
+"/": "225f597907f66da696a22f94bb62e4b7",
+"main.dart.js": "abe246df583a3ab8443e2bf1c54f7f9e",
 "manifest.json": "85f72a84bb189e22ecc65b59a6e88237",
 "version.json": "6317ae4c635d34c40e02bc283b1ab684"};
 // The application shell files that are downloaded before a service worker can
